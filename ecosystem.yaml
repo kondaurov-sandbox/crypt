@@ -1,0 +1,10 @@
+apps:
+  - script   : ./dist/service/main.js
+    name     : 'service'
+    watch: [ "./dist" ]
+    ignore_watch : [ "dist/server" ]
+
+  - script   : ./dist/server/main.js
+    name     : 'server'
+    watch: [ "./dist" ]
+    ignore_watch : [ "dist/service" ]  
